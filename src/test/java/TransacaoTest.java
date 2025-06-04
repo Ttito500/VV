@@ -37,15 +37,16 @@ public class TransacaoTest {
         assertFalse(resultadoEncontrado);
     }
 
+    //mock é para valores e metodos chamados durante o teste
     @Test
     @DisplayName("Teste mock de saque")
     void testeSaqueComSaldoSuficienteMock(){
         ArgumentCaptor<Integer> valorSaque = ArgumentCaptor.forClass(Integer.class);
         Mockito.doNothing().when(conta).removeSaldo(valorSaque.capture());
 
-        transacao.saca(conta, 50);
+        transacao.saca(conta, 40);
 
-        assertEquals(50, valorSaque.getValue().intValue());
+        assertEquals(40, valorSaque.getValue().intValue());
     }
 
     @Test
