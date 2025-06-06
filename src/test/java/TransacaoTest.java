@@ -1,4 +1,6 @@
-//feito para teste de stubs, SUT = Transacao
+//feito para teste de stubs, SUT = banco_02.Transacao
+import banco_02.Conta;
+import banco_02.Transacao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

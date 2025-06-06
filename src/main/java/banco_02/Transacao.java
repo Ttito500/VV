@@ -1,3 +1,5 @@
+package banco_02;
+
 //feito para teste de stubs
 public class Transacao {
     public boolean deposita (Conta conta, int value){
